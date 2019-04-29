@@ -35,9 +35,9 @@
         <p><input type="submit" value="Submit"></p>
       </form>
     </div>
-    <div class="success-message" v-show="!showForm"><!-- TODO: Modulate display of the .success-message using v-show and the showForm variable. -->
+    <div class="success-message" v-show="!showForm">
       <h1>Thank you for signing up!</h1>
-      <p>Please take our new member survey. Click here</p><!-- TODO: Link "Click here" to the survey page. -->
+      <p>Please take our new member survey. <router-link to="/survey">Click here</router-link></p>
     </div>
   </div>
 </template>
@@ -70,7 +70,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 .error {
   border: 1px solid #aa0000;
